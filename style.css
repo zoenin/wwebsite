@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Avenir', sans-serif;
+}
+
+/* Containers */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+/* Header */
+.header {
+  color: white;
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+}
+
+.header h1 {
+  padding: 240px 0;
+  margin: 0;
+  font-size: 72px;
+  font-weight: 300;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: white;
+}
+
+/* About */
+.about {
+  background: #F2F0F7;
+  padding: 60px 0;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 60%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 48%;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Numbers */
+.numbers {
+  padding: 60px 0;
+}
+
+.num {
+  width: 30%;
+}
+
+.num h3 {
+  color: #999999;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.num p {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .header h1 {
+    font-size: 36px;
+  }
+
+  .header, .about, .numbers {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .left, .right, .num {
+    width: 100%;
+  }
+
+  .num {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
